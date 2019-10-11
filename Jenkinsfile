@@ -27,7 +27,7 @@ stage("SonarQube analysis") {
  }
  stage("deploy"){
   steps{
-   deploy adapters: [tomcat8(credentialsId: '457251c5-1f76-45c5-a70f-416864ced0a6', path: '', url: 'http://3.15.0.139:8088')], contextPath: 'falons123', onFailure: false, war: '**/*.war
+   deploy adapters: [tomcat8(credentialsId: '457251c5-1f76-45c5-a70f-416864ced0a6', path: '', url: 'http://3.15.0.139:8088')], contextPath: 'falons123', onFailure: false, war: '**/*.war'
   }
  }
 }
