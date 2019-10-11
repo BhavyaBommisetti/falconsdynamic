@@ -1,6 +1,8 @@
 pipeline{
 agent any 
-
+ tools {
+        maven "Maven"   
+    }    
 stages{
 
 stage('clean and build'){
